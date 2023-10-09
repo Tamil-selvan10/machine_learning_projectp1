@@ -3,3 +3,5 @@ pandas
 Flask
 scikit-learn
 gunicorn
+pyYAML
+-e .

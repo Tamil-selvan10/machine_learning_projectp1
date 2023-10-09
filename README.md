@@ -122,3 +122,15 @@ To stop docker container:
 docker stop <container_id>
 ```
 
+
+To install setup.py:
+```
+pip setup.py install
+```
+
+To install yaml:
+
+```
+pip install pyYAML
+```
+

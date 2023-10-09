@@ -1,4 +1,7 @@
 from flask import Flask
+from housing.logger import logging
+from housing.exception import HousingException
+import sys
 
 
 app=Flask(__name__) # Name of module
@@ -6,6 +9,11 @@ app=Flask(__name__) # Name of module
 
 @app.route('/',methods=['GET','POST'])
 def index():
+    try:
+        result=10/0
+    except Exception as e:
+        Houexec=HousingException(error_message=e,error_detail=sys)
+        logging.info(Houexec.error_message)
     return 'Starting Machine Learning Project'
 
 if __name__=='__main__':
