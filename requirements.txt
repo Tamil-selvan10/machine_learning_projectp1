@@ -4,5 +4,6 @@ Flask
 scikit-learn
 gunicorn
 pyYAML
+dill
 evidently
 -e .

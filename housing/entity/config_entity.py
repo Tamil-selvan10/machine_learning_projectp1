@@ -16,7 +16,7 @@ DataIngestionConfig=namedtuple(typename='DataIngestionConfig',
                                               ])
 
 DataValidationConfig=namedtuple(typename='DataValidationConfig',
-                                field_names=['schema_file_path'])
+                                field_names=['schema_file_path','report_file_path','report_page_file_path'])
 
 
 DataTransformationConfig=namedtuple(typename='DataTransformationConfig',
